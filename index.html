@@ -16,8 +16,8 @@
     <header class="header">
         <div class="header-info">
             <img src="./Images/profile.jpg" alt="profile_picture">
-            <h3>I am a Software Project Manager</h3>
-            <h4>Learning to code</h4>
+            <h2>I am a Software Project Manager</h2>
+            <h3>Learning to code</h3>
             <button type="button" class="btn"><a href="#headerTitle">See My Languages</a></button>
             <button type="experience_btn" class="btn"><a href="./projects.html">See My Projects</a></button>
             <button type="resume_btn" class="btn"><a href="./Images/david_resume.pdf" target="_blank">See My Resume</a></button>
@@ -30,21 +30,18 @@
         <div class="experience-container col-4 col-sm-12 col-lg-4">
             <div class="experience-item">
                 <i class="fa-brands fa-js fa-10x item-logo" alt="Java logo"></i>
-                <!-- <span class="item-logo"><img src="./Images/java.png" alt="Java logo"></span> -->
                 <span class="item-name">Javascript</span>
             </div>
         </div>
         <div class="experience-container col-4 col-sm-12 col-lg-4">
             <div class="experience-item">
                 <i class="fa-brands fa-css3 fa-10x item-logo" alt="CSS logo"></i>
-                <!-- <span class="item-logo"><img src="./Images/css.png" alt="CSS logo"></span> -->
                 <span class="item-name">CSS</span>
             </div>
         </div>
         <div class="experience-container col-4 col-sm-12 col-lg-4">
             <div class="experience-item">
                 <i class="fa-solid fa-code fa-10x item-logo" alt="HTML logo"></i>
-                <!-- <span class="item-logo"><img src="./Images/html.png" alt="HTML logo"></span> -->
                 <span class="item-name">HTML</span>
             </div>
         </div>  
@@ -53,17 +50,23 @@
     <section class="section contact-sec">
         <div class="section-header" id="contactHeader" style="color: #fff">Contact Me</div>
         <div class="contact-container">
-            <form id="contact-form"> 
+            <!-- <form id="contact-form"> 
                 <label for="name">Your Name</label>
                 <input type="text" name="name" placeholder="Your Name">
                 <label for="email">Your Email</label>
                 <input type="text" name="email" placeholder="Your Email">    
                 <label for="name">Content</label>
                 <textarea name="content" id="content" placeholder="Your Message Here!"></textarea>
-                <!-- <button type="submit" class="contactbtn">Submit</button>> -->
             </form>
         </div>
-        <a href="mailto:david.joseph.irving@gmail.com?subject=Portfolio Emial">Submit</a>
+        <a href="mailto:david.joseph.irving@gmail.com?subject=Portfolio Emial">Submit</a> -->
+        <form action="https://formsubmit.com/david.joseph.irving@gmail.com" id="contact-form" method="POST">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="email" name="email" class="contactBox" placeholder="Email Address" required>
+            <input type="hidden" name="_next" value=".thankyou.html">
+            <input type="text" name="name" class="contactBox" placeholder="Your Message Here!" required>
+            <button type="submit" class="contactBtn">Send</button>
+        </form>
 
     
     </section>

@@ -1,3 +1,8 @@
+:root {
+    --clr-neon: rgb(37, 112, 209);
+    --clr-bg: hsl(323 21% 16%)
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -33,8 +38,8 @@ html, body {
 }
 
 .header-info img{
-    height: 12%;
-    width: 12%;
+    height: 15%;
+    width: 15%;
 }
 
 .btn {
@@ -70,13 +75,6 @@ text-shadow: none;
     margin-top: 3em;
 }
 
-/* .experience-sec {
-    display: flex;
-    flex-direction: column;
-    text-emphasis: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} */
-
 .section-header {
     display: block;
     margin-left: auto;
@@ -103,12 +101,11 @@ text-shadow: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 30px; */
     border-radius: 3px;
 }
 
 .item-name {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2rem;    
@@ -201,3 +198,50 @@ img {
 .item-logo:hover {
     transform: scale(1.4);
 }   
+
+.contactBtn {
+    margin: auto;
+    border: 2px solid #ff9ff3;
+    width: 10em;
+    height: 2.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color:#95a5a6;
+    font-size: 25px;
+    transition-property: border;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    margin-bottom: 30px;
+}
+
+.contactBox {
+    min-height: 10px;
+}
+
+/* Testing neon button for mailto
+
+.test {
+color: var(--clr-neon);
+text-decoration: none
+border: var(--clr-neon) 0.125em solid;
+padding: 0.25em 1em;
+border-radius: 0.25em;
+
+text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+position: relative;
+}
+
+.test::before {
+    content: '';
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(2em);
+} */
