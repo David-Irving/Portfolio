@@ -58,6 +58,7 @@ a {
     text-decoration: none;
     color: #ffc048;
 }
+
 .btn:hover{
 border-width: 5px;
 background-color: transparent;
@@ -65,30 +66,36 @@ text-shadow: none;
 }
 
 .section {
-    display: flex;
     width: 100%;
     margin-top: 3em;
 }
 
-.experience-sec {
+/* .experience-sec {
+    display: flex;
     flex-direction: column;
     text-emphasis: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
+} */
 
 .section-header {
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+    width: 25%;
     font-size: 30px;
     padding: 10px 5px;
     border-bottom: 3px solid #3742fa;
+} 
+
+.box {
+    display: flex;
+    justify-content: center;
 }
 
 .experience-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin-top: 25px;
-    margin-left: 40px;
 }
 
 .experience-item {
@@ -96,26 +103,15 @@ text-shadow: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    /* padding: 30px; */
     border-radius: 3px;
-}
-
-.item-logo > img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.item-logo {
-    width: 20em;
-    height: 18em;
-    flex-direction: column;
-    display: flex;
 }
 
 .item-name {
     font-size: 25px;
+    text-align: center;
     margin-top: 2em;
+    margin-bottom: 2rem;    
 }
 
 .contact-sec {
@@ -145,6 +141,8 @@ text-shadow: none;
 
 #contact-form > input {
     padding: 0 5px;
+    outline: none;
+    border-radius: 10px;
     height: 40px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -161,6 +159,8 @@ text-shadow: none;
 }
 
 #contact-form > textarea {
+    outline: none;
+    border-radius: 10px;
     max-width: 100%;
     min-height: 100%;
     min-height: 40px;
@@ -176,3 +176,28 @@ text-shadow: none;
     height: 60px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+a[href^="mailto:"] { 
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 35px;
+    position: relative;
+    bottom: 40px;
+    border: 2px solid #ff9ff3;
+    padding: 2px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+img {
+    transition: all .2s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.item-logo:hover {
+    transform: scale(1.4);
+}   
