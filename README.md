@@ -40,4 +40,4 @@
 * https://github.com/David-Irving/Portfolio
 
 
-![Website Preview](https://github.com/djirving84/portfolio/blob/main/images/PortfolioPreview.png)
+![Website Preview](https://github.com/David-Irving/Portfolio/blob/main/Images/PortfolioPreview.png)
