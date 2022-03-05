@@ -38,8 +38,9 @@ html, body {
 }
 
 .header-info img{
-    height: 15%;
-    width: 15%;
+    height: 17%;
+    width: 17%;
+    border-radius: 50%;
 }
 
 .btn {
