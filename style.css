@@ -228,49 +228,16 @@ img {
     min-height: 10px;
 }
 
-.elastic-fai-xl{
-    font-size:80px;
-}
-.elastic-fai-lg{
-    font-size:50px;
-}
-.elastic-fai-md{
-    font-size:40px;
-}
-.elastic-fai-sm{
-    font-size:30px;
-}
-.elastic-fai-xs{
-    font-size:20px;
-}
-/* Extra small devices */
-@media(max-width:544px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-xs{
-        font-size:20px;
+
+@media (max-width: 320px) {
+    .experience-item {
+        font-size: .5rem;
     }
 }
-/* Small devices */
-@media(min-width:544px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-sm{
-        font-size:30px;
-    }
-}
-/* Medium devices */
-@media(min-width:768px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-md{
-        font-size:40px;
-    }
-}
-/* Large devices */
-@media(min-width:992px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-lg{
-        font-size:50px;
-    }
-}
-/* Exrta Large devices */
-@media(min-width:1200px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-xl{
-        font-size:80px;
+
+@media (max-width: 700px) {
+    .experience-item {
+        font-size: .75rem;
     }
 }
 
